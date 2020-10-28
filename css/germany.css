@@ -1,0 +1,74 @@
+header {
+    background-color: black;
+    }
+
+#logo {
+    color: white;
+    text-shadow: 2px 2px 4px white;
+}
+
+#login, #register {
+    color: black;
+    background-color: gold;
+    border: 0px;
+    border-radius: 10%;
+    padding: 10px 24px;
+}
+
+#login {
+    right: 160px;
+}
+
+nav {
+    border-bottom: 15px solid gold;
+    background-color: crimson;
+}
+
+img {
+    position: absolute;
+    left: 94%;
+    object-fit: scale-down;
+    height: 100px;
+    width:  100px;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+section {
+    width: 100%;
+}
+
+h2, h3, h4, h5 {
+    text-align: center;
+}
+
+p {
+    text-indent: 25px;
+  }
+
+.pre {
+    white-space: pre-line;
+    margin-top: -50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    padding: 20px;
+    margin-left: -25px;
+}
+
+.grid-container > div {
+    background-color:  #e7e7e7;
+    text-align: justify;
+    padding: 20px;
+}
+
+footer, footer a:link, footer a:visited {
+    background-color: gold;
+    color:black;
+}
+
