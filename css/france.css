@@ -1,54 +1,57 @@
-header {
-    background-color: blue;
+header { /*color*/
+    background-color: rgb(20, 20, 136);
 }
 
-#logo {
-    color: white;
-    text-shadow: 2px 2px 4px white;    
-}
-
-#login, #register {
-    color: blue;
-    background-color: white;
-    border-radius: 10%;
-    padding: 10px 24px;
-}
-
-#login {
-    right: 160px;
-}
-
-nav {
+nav { /*color*/
     border-bottom: 15px solid red;
     background-color: white;
 }
 
-img {
-    position: absolute;
-    left: 94%;
-    object-fit: scale-down;
-    height: 100px;
-    width:  100px;
+#logo { /*color*/
+    color: white;
+    text-shadow: 2px 2px 4px white;    
 }
 
-a:link, a:visited {
+#login { /*postion due to increased button size*/
+    right: 160px;
+}
+
+input { /*color, border, padding, and radius*/
+    color: rgb(20, 20, 136);
+    background-color: white;
+    border-radius: 10%;
+    border: 0px;
+    padding: 10px 24px;
+}
+
+a:link, a:visited { /*color*/
     color: red;
 }
 
-section {
+section { /*width*/
     width: 100%;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5 { /*alignment*/
     text-align: center;
+}
+
+p {
+    text-indent: 25px;
+  }
+
+img { /*position and scaling*/
+    position: absolute;
+    left: 94%;
+    object-fit: scale-down;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 32% 32% 32%;
     grid-gap: 30px;
     padding: 20px;
-    margin-left: -25px;
+    margin-left: -15px;
 }
 
 .grid-container > div {
@@ -57,8 +60,8 @@ h2, h3, h4, h5 {
     padding: 20px;
 }
 
-footer, footer a:link, footer a:visited {
-    background-color: blue;
+footer, footer a:link, footer a:visited { /*color*/
+    background-color: rgb(20, 20, 136);
     color: white;
 }
 
