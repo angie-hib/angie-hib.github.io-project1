@@ -1,59 +1,79 @@
-header {
-    background-color: midnightblue;
+header { /*color*/
+    background-color: midnightblue; 
     }
 
-#logo {
-    color: white;
+nav  { /*colour*/
+    border-bottom: 15px solid midnightblue;
+    background-color: white;
+}
+        
+#logo { /*color*/
+    color: white; 
     text-shadow: 2px 2px 4px white;
 }
 
-#login, #register {
-    color: white;
+input { 
+    color: white; 
     background-color: crimson;
     border-radius: 10%;
     border: 0px;
     padding: 10px 24px;
 }
 
-#login {
-    right: 160px;
-}
-
-nav {
-    border-bottom: 15px solid midnightblue;
-    background-color: white;
-}
-
-img {
-    position: absolute;
-    left: 94%;
-    object-fit: scale-down;
-    height: 100px;
-    width:  100px;
-}
-
-a:link, a:visited {
+a:link, a:visited { /*colour*/
     color: midnightblue;
 }
 
-section {
-    width: 100%;
+footer, footer a:link, footer a:visited { /*colour*/
+    background-color: midnightblue;
+    color:white;
 }
 
-h2, h3, h4, h5 {
+/*ordinarily I would have used class selectors and handled everything below this comment in the global css file, but as we are not to change the global file when using the group css I have added them to each new css file*/
+
+#login { /*position to compensate for increased button size*/
+    right: 160px;
+}
+
+body { /*colour*/
+    background-color: white;
+}
+section { /*width*/
+   width: 100%;
+}
+
+img { /*position and scaling*/
+    position: absolute;
+    left: 94%;
+    object-fit: scale-down;
+}
+
+h2, h3, h4, h5 { /*alignment*/
     text-align: center;
 }
 
-p {
-    text-indent: 25px;
+h2 { /*font size*/
+    font-size: 35px;
 }
 
-.grid-container {
+h3.author { /*font size*/
+    font-size: 30px;
+}
+
+h4 { /*font size*/
+    font-size: 20px;
+}
+
+article p { /*indent added, white space between <p> elements removed*/
+    text-indent: 30px;
+    margin: 0em;
+}
+
+.grid-container { /*grid added for better aesthetic organisation of information on the page*/
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 32% 32% 32%;
     grid-gap: 30px;
     padding: 20px;
-    margin-left: -25px;
   }
 
 .grid-container > div {
@@ -61,13 +81,3 @@ p {
     text-align: justify;
     padding: 20px;
 }
-
-footer, footer a:link, footer a:visited {
-    background-color: midnightblue;
-    color:white;
-}
-
-
-
-
-
