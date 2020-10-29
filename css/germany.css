@@ -1,13 +1,18 @@
-header {
+header { /*color*/
     background-color: black;
     }
 
-#logo {
+nav { /*color*/
+    border-bottom: 15px solid gold;
+    background-color: crimson;
+}
+    
+#logo { /*color*/
     color: white;
     text-shadow: 2px 2px 4px white;
 }
 
-#login, #register {
+input { /*color, border, radius, and padding*/
     color: black;
     background-color: gold;
     border: 0px;
@@ -15,51 +20,67 @@ header {
     padding: 10px 24px;
 }
 
-#login {
-    right: 160px;
-}
-
-nav {
-    border-bottom: 15px solid gold;
-    background-color: crimson;
-}
-
-img {
-    position: absolute;
-    left: 94%;
-    object-fit: scale-down;
-    height: 100px;
-    width:  100px;
-}
-
-a:link, a:visited {
+a:link, a:visited { /*color*/
     color: black;
 }
-
-section {
-    width: 100%;
-}
-
-h2, h3, h4, h5 {
-    text-align: center;
-}
-
-p {
-    text-indent: 25px;
-  }
 
 .pre {
     white-space: pre-line;
     margin-top: -50px;
+    text-align-last: center;
 }
 
-.grid-container {
+footer, footer a:link, footer a:visited { /*color*/
+    background-color: crimson;
+    color:black;
+}
+
+/*ordinarily I would have used class selectors and handled everything below this comment in the global css file, but as we are not to change the global file when using the group css I have added them to each new css file*/
+
+#login { /*position to compensate for increased button size*/
+    right: 160px;
+}
+
+body { /*colour*/
+    background-color: white;
+}
+section { /*width*/
+   width: 100%;
+}
+
+img { /*position and scaling*/
+    position: absolute;
+    left: 94%;
+    object-fit: scale-down;
+}
+
+h2, h3, h4, h5 { /*alignment*/
+    text-align: center;
+}
+
+h2 { /*font size*/
+    font-size: 35px;
+}
+
+h3.author { /*font size*/
+    font-size: 30px;
+}
+
+h4 { /*font size*/
+    font-size: 20px;
+}
+
+article p { /*indent added, white space between <p> elements removed*/
+    text-indent: 30px;
+    margin: 0em;
+}
+
+.grid-container { /*grid added for better aesthetical organisation of information on the page*/
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 32% 32% 32%;
     grid-gap: 30px;
     padding: 20px;
-    margin-left: -25px;
-}
+  }
 
 .grid-container > div {
     background-color:  #e7e7e7;
@@ -67,8 +88,8 @@ p {
     padding: 20px;
 }
 
-footer, footer a:link, footer a:visited {
-    background-color: gold;
-    color:black;
+.pre_abstract {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 35px;
 }
-
